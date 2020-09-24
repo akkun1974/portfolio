@@ -511,7 +511,6 @@ ul li {
 }
 
 @media (min-width: 768px) {
-   /* 横幅が768px以上の場合に適用するスタイル */
    .gazou { width: 40%!important;}
 }
 
@@ -696,6 +695,10 @@ display:flex;
 .mt5{margin-top: 5px;}
 .mt10{margin-top: 10px;}
 .pt100{padding-top: 100px;}
+
+@media (max-width: 1024px) {
+	.pc_only {display: none;}
+}
 
 /* ------------------------------------------------------------------------------
 	 メニュー　アニメーション
