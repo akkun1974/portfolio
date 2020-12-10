@@ -727,6 +727,42 @@ display:flex;
 	}
 }
 
+/* ------------------------------------------------------------------------------
+	 コンテンツ　アニメーション
+-------------------------------------------------------------------------------*/
+.appear2 {
+	animation:show2 2s both;
+}
+
+.appear3 {
+	animation:show3 2s both;
+}
+/* li.appear {display:inline-block;} */
+.c1 {animation-delay:0.0s;}
+.c2 {animation-delay:0.2s;}
+
+@keyframes show2 {
+	0% {
+		transform:translate(-3em,0);
+		opacity:0;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+	}
+}
+
+@keyframes show3 {
+	0% {
+		transform:translate(3em,0);
+		opacity:0;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+	}
+}
+
 
 /* ------------------------------------------------------------------------------
 	 スクロール表示
