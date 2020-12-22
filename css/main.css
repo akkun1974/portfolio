@@ -328,23 +328,30 @@ ul li {
 
 .carousel {
 	width: 94%;
-	height: 500px;
+	height: auto;
 	margin: auto;
 }
 .item, .active, .carousel-inner {
 	height: 100%;
 }
 .carousel-caption {
-	bottom: 40%;
+	/* bottom: 40%; */
+	/* left: 15%; */
+	/* padding-bottom: 20px; */
+	/* padding-top: 20px; */
 	color: #7a0a42;
-	left: 15%;
-	padding-bottom: 20px;
-	padding-top: 20px;
 	position: absolute;
-	right: 15%;
+	top:40%;
+	/* right: 15%; */
 	text-align: center;
 	z-index: 10;
 }
+
+@media (min-width: 768px) {
+	.carousel-caption{ top:30%;}
+}
+
+
 .carousel-caption h3 {
 	font-family: "Open Sans", sans-serif;
 	color: #7a0a42;
