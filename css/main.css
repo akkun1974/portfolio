@@ -730,6 +730,11 @@ display:flex;
   text-align: center;
 }
 
+#page_top:hover{
+  transform: scale(1.3);
+  transition-duration: 0.3s;
+}
+
 
 /* ------------------------------------------------------------------------------
 	 その他調整
@@ -737,6 +742,9 @@ display:flex;
 .mt5{margin-top: 5px;}
 .mt10{margin-top: 10px;}
 .pt100{padding-top: 100px;}
+.lh20{line-height: 20px;}
+
+.d-none{display: none;}
 
 @media (max-width: 1024px) {
 	.pc_only {display: none;}
