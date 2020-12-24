@@ -299,6 +299,9 @@ ul li {
 }
 
 /*ナビゲーションライン*/
+
+@media (min-width:1024px) {
+
 .primary-nav a {
   position: relative;
   display: inline-block;
@@ -320,6 +323,7 @@ ul li {
   transform: scale(1, 1);
 }
 
+}
 
 
 /* ------------------------------------------------------------------------------
