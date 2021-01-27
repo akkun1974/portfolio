@@ -70,6 +70,7 @@
 .detail-contentbox {
 	background-color: #ecf7ff;
 	padding: 6%;
+	margin-top:20px;
 }
 }
 @media screen and (max-width: 640px) {
