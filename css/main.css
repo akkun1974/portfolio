@@ -27,6 +27,7 @@ h3 {
 	font-size: 28px;
 	color: #2d3033;
 	font-weight: 300;
+	margin-top: 10px;
 }
 h4 {
 	font-size: 22px;
@@ -88,9 +89,12 @@ ul li {
 }
 
 .section {
-	padding: 30px 0;
+	padding: 10px 0;
 }
 
+.section:nth-child(1) {
+	padding-top:30px;
+}
 
 .no-padding {
 	padding: 0;
@@ -104,10 +108,12 @@ ul li {
 -------------------------------------------------------------------------------*/
 #header {
 	position: fixed;
-	width: 94%;
+	width: 100%;
 	z-index: 999;
-	margin-left: 3%;
-	margin-right: 3%;
+	padding-left: 2%;
+	padding-right: 2%;
+	/* margin-left: 3%;
+	margin-right: 3%; */
 }
 #header .header-content {
 	margin: 0 auto;
@@ -327,72 +333,23 @@ ul li {
 
 
 /* ------------------------------------------------------------------------------
-	 Header Slider
+	 Slider
 -------------------------------------------------------------------------------*/
 
-.carousel {
-	width: 94%;
-	height: auto;
-	margin: auto;
-}
-.item, .active, .carousel-inner {
-	height: 100%;
-}
-.carousel-caption {
-	/* bottom: 40%; */
-	/* left: 15%; */
-	/* padding-bottom: 20px; */
-	/* padding-top: 20px; */
-	color: #7a0a42;
-	position: absolute;
-	top:40%;
-	/* right: 15%; */
-	text-align: center;
-	z-index: 10;
+
+.wrapper {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-	.carousel-caption{ top:30%;}
+@media (min-width:1024px) {
+	.wrapper {
+		padding: 0 20px!important;
+	}
 }
-
-
-.carousel-caption h3 {
-	font-family: "Open Sans", sans-serif;
-	color: #7a0a42;
-	text-shadow: none;
-	font-size: 31px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-}
-.carousel-caption p {
-	font-family: "Open Sans", sans-serif;
-	color: #6c7279;
-	text-shadow: none;
-	font-size: 13px;
-	font-weight: 400;
-	letter-spacing: 2px;
-}
-.carousel-control.left {
-	background: none;
-}
-.carousel-control.right {
-	background: none;
-}
-.carousel-control {
-	opacity: 1;
-	text-shadow: none;
-}
-
-/* ------------------------------------------------------------------------------
-	 スライダー調整
--------------------------------------------------------------------------------*/
-.carousel-indicators li{border:1px solid #7a0a42;}
-.active{margin-right:5px!important;}
-.carousel-control{color:#7a0a42}
-.carousel-indicators .active{background: #7a0a42;}
-.carousel-control:hover{color:#a24d83;}
-.carousel-control:active{color:#a24d83;}
 
 /* ------------------------------------------------------------------------------
 	 Services
@@ -511,6 +468,7 @@ ul li {
 .footer p {
 	font-size: 11px;
 	color: #6c7279;
+	line-height: 60px;
 }
 .footer a {
 	color: #000;
@@ -527,7 +485,7 @@ ul li {
 }
 .footer .footer-share a {
 	border: none;
-	font-size: 13px;
+	font-size: 30px;
 	color: #000;
 	letter-spacing: 15px;
 }
@@ -591,23 +549,23 @@ ul li {
 }
 
 .res-table table{
-border:#6699ff 1px solid;
 background:rgba(255,255,255,0.7);
 }
 
 .res-table tr{
-    border-bottom:#6699ff 1px solid;
+    border-bottom:#ecf7ff 3px solid;
 }
 .res-table tr:last-child{
 	border:none
  }
 .res-table th{
 	vertical-align:top;
-	width:10%;   
+	width:15%;   
   padding:10px 10px;
 	display:table-cell;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
+	font-family: 'Noto Serif JP', serif;
 	line-height: 16px;
 
 }
@@ -631,6 +589,11 @@ margin-left:1%;
 
 .res-table table{width:100%;}
 
+.res-table tr:nth-child(6)>td>p{
+	font-family: 'Noto Serif JP', serif;
+	font-size: 16px;
+	}
+
 
 /*プロフィール画像*/
 
@@ -646,45 +609,53 @@ width:50%;
 @media (max-width: 768px) {
    /* 横幅が768px以下の場合に適用するスタイル */
    
-/*レスポンシブ table*/
-.res-table{header-slider
-	width:95%;
-    margin:0 auto;
-	border:none;
-	/*background:rgba(255,255,255,0.7);*/
-}
-.res-table th{
-width:100%;
-    padding:5px;
-	display:block;
-	background-color:#ccddff;
-}
+	/*レスポンシブ table*/
+	.res-table{header-slider
+		width:95%;
+		margin:0 auto;
+		border:none;
+		/*background:rgba(255,255,255,0.7);*/
+	}
+	.res-table th{
+	width:100%;
+		padding:5px;
+		display:block;
+		background-color:#ccddff;
+		background: -moz-linear-gradient(right, rgba(204, 221, 255, 0.5), transparent);
+		background: -webkit-linear-gradient(right, rgba(204, 221, 255, 0.5), transparent);
+		background: linear-gradient(to right, rgba(204, 221, 255, 1), #fff 75%);
+	}
 
-.res-table tr{border:none;}
+	.res-table tr{border:none;}
 
-.res-table td{
-width:100%;
-	padding:5px;
-	display:block;
-	text-align:left;
-}
+	.res-table td{
+	width:100%;
+		padding:5px;
+		display:block;
+		text-align:left;
+	}
 
-.res-table td img{
-width:100%;
-}
+	.res-table td img{
+	width:100%;
+	}
 
-.res-table td img:nth-child(2){
-margin-left:0%;
-}
+	.res-table td img:nth-child(2){
+	margin-left:0%;
+	}
 
-/*画像*/
-.self img{
-width:100%;
-}
+	/*画像*/
+	.self img{
+	width:100%;
+	}
 
-section{
-display:flex;
-}
+	section{
+	display:flex;
+	}
+	.res-table tr:nth-child(6)>td>p{
+		font-size: 14px;
+		padding-left: 28px;
+		text-indent: -28px;
+		}
 
 }
 
@@ -707,6 +678,7 @@ display:flex;
 	z-index:100;
 	border-radius:50%;
 	margin:10px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 
 #page_top a{
