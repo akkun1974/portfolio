@@ -449,6 +449,12 @@ ul li {
 	z-index: 2;
 }
 
+.col-md-4{
+	padding: 10px!important;
+}
+
+
+
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
@@ -564,7 +570,7 @@ background:rgba(255,255,255,0.7);
   padding:10px 10px;
 	display:table-cell;
 	text-align: left;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Noto Serif JP', serif;
 	line-height: 16px;
 
@@ -677,7 +683,7 @@ width:50%;
 	text-align:center;
 	z-index:100;
 	border-radius:50%;
-	margin:10px;
+	margin:20px;
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 
