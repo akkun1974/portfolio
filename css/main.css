@@ -473,6 +473,10 @@ ul li {
 }
 
 
+@media (max-width:576px) {
+.col-xs-6 .caption-content h3{display: none;}
+.col-xs-6 .caption-content h4{display: none;}
+}
 
 /* ------------------------------------------------------------------------------
 	 Footer
