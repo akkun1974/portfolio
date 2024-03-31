@@ -374,7 +374,7 @@ ul li {
 	 Services
 -------------------------------------------------------------------------------*/
 .services {
-	width: 94%;
+	width: 80%;
 	margin: auto;
 	background-color: #ecf7ff;
 }
@@ -411,7 +411,7 @@ ul li {
 	 DTP,WEB ETC
 -------------------------------------------------------------------------------*/
 #web,#dtp,#etc {
-	width: 92%;
+	width: 80%;
 	margin: auto;
 }
 #web .portfolio-item,#dtp .portfolio-item,#etc .portfolio-item {
