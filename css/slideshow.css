@@ -73,7 +73,8 @@
 
 @media only screen and (max-width: 750px) {
   .slick-dots button {
-    height:8px;/*ドットボタンのサイズ*/
+    width:10px;/*ドットボタンのサイズ*/
+    height:10px;/*ドットボタンのサイズ*/
   }
 }
 
