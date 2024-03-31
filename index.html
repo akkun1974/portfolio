@@ -19,8 +19,10 @@
 <link rel="stylesheet" href="css/animate.min.css">
 <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
-<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
-<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/slicebox.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/custom.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
 <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
 <link rel="shortcut icon" href="/images/favicon.ico"/>
@@ -52,46 +54,13 @@
 <section id="header-slider" class="section pt100">
   <div class="wrapper">
 
-    <ul id="sb-slider" class="sb-slider">
-      <li>
-        <img src="images/slider/slid1.jpg" alt="image1"/>
-        <div class="sb-description">
-          <h3>PortFolio</h3>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/slid2.jpg" alt="image2"/>
-        <div class="sb-description">
-          <h3>WEB Design</h3>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/slid3.jpg" alt="image1"/>
-        <div class="sb-description">
-          <h3>DTP Design</h3>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/slid4.jpg" alt="image1"/>
-        <div class="sb-description">
-          <h3>ETC Design</h3>
-        </div>
-      </li>
-    </ul>
+    <ul class="slider">
+      <li><img src="images/slider/slide01.jpg" alt="ポートフォリオ"></li>
+      <li><img src="images/slider/slide02.jpg" alt="WEB作品"></li>
+      <li><img src="images/slider/slide03.jpg" alt="DTP作品"></li>
+      <li><img src="images/slider/slide04.jpg" alt="ETC"></li>
+    <!--/slider--></ul>
 
-    <div id="shadow" class="shadow"></div>
-
-    <div id="nav-arrows" class="nav-arrows">
-      <a href="#">Next</a>
-      <a href="#">Previous</a>
-    </div>
-
-    <div id="nav-dots" class="nav-dots">
-      <span class="nav-dot-current"></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
   </div><!-- /wrapper -->
 
@@ -515,8 +484,26 @@
 <script src="js/retina.min.js"></script> 
 <script src="js/modernizr.js"></script> 
 <script src="js/main.js"></script>
-<script type="text/javascript" src="js/jquery.slicebox.js"></script>
-<script type="text/javascript" src="js/jquery.slicebox2.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+<script type="text/javascript" src="js/jquery.slicebox2.js"></script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $('.slider').slick({
+    autoplay: true,//自動的に動き出すか。初期値はfalse。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    speed: 1000,//スライドのスピード。初期値は300。
+    slidesToShow: 3,//スライドを画面に4枚見せる
+    slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+    prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+    centerMode: true,//要素を中央ぞろえにする
+    variableWidth: true,//幅の違う画像の高さを揃えて表示
+    dots: true,//下部ドットナビゲーションの表示
+  });
+</script>
+
 
 
 <!-- TOPボタン --> 
