@@ -757,9 +757,20 @@ width:50%;
 
 .d-none{display: none;}
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 	.pc_only {display: none;}
+} */
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc_only { display: block !important; }
+.sp_only { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 1024px) {
+    .pc_only { display: none !important; }
+    .sp_only { display: block !important; }
 }
+
 
 /* ------------------------------------------------------------------------------
 	 メニュー　アニメーション
