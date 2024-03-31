@@ -71,6 +71,13 @@
     border:2px solid #48bfea;
 }
 
+@media only screen and (max-width: 750px) {
+  .slick-dots button {
+    height:8px;/*ドットボタンのサイズ*/
+  }
+}
+
+
 .slick-dots .slick-active button{
     background:#48bfea;/*ドットボタンの現在地表示の色*/
 }
