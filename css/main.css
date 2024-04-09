@@ -13,6 +13,9 @@ p {
 	color: #6c7279;
 	margin:0px;
 }
+
+header h1{margin: 0;}
+
 h1 {
 	font-size: 65px;
 	color: #2d3033;
